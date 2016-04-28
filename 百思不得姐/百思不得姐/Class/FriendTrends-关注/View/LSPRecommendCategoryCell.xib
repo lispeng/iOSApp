@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="leftRecommendCategoryCell" id="KGk-i7-Jjw" customClass="LSPRecommendCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="leftRecommendCategoryCell" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFt-aE-fsP" userLabel="底部的分割线">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vRO-Mp-5iY"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8j0-mO-6bh" userLabel="选中cell时左侧要显示的控件">
+                        <rect key="frame" x="0.0" y="0.0" width="5" height="42"/>
+                        <color key="backgroundColor" red="1" green="0.092065155979999994" blue="0.26700309290000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="kFt-aE-fsP" secondAttribute="bottom" id="eA4-Yz-dYi"/>
+                    <constraint firstItem="kFt-aE-fsP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="faV-AG-aGe"/>
+                    <constraint firstAttribute="trailing" secondItem="kFt-aE-fsP" secondAttribute="trailing" id="jtX-gP-q67"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectedIndicator" destination="8j0-mO-6bh" id="yRU-Ox-G8S"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="153"/>
+        </tableViewCell>
+    </objects>
+</document>
